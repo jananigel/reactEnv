@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDom from 'react-dom';
+
 class HellowWorld extends React.Component {
     render() {
         return(
@@ -6,4 +9,5 @@ class HellowWorld extends React.Component {
     };
 };
 
-module.exports = HellowWorld;
+// module.exports = HellowWorld;
+export default HellowWorld;

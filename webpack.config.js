@@ -1,17 +1,23 @@
 var config = {
     entry: './app/main.js',
     output: {
-        path: __dirname + '/build',
-        filename: 'buldle.js'
+        path: __dirname + '/dist',
+        publicPath: '/',
+        filename: 'bundle.js'
     },
     module: {
         rules: [
-            {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                loader: 'babel-loader'
+          {
+            test: /\.(js|jsx)$/,
+            exclude: /node_modules/,
+            use: {
+              loader: "babel-loader"
             }
+          }
         ]
+    },
+    resolve: {
+        extensions: ['*', '.js', '.jsx']
     }
 }
 

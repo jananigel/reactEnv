@@ -1,11 +1,5 @@
 {
     "presets": [
-      "es2015",
-      "react"
-    ],
-    "env": {
-        "development": {
-            "presets": ["react-hmre"]
-        }
-    }
+        "@babel/preset-env", "@babel/preset-react"
+    ]
 }
