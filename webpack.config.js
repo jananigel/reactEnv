@@ -5,6 +5,9 @@ var config = {
         publicPath: '/',
         filename: 'bundle.js'
     },
+    devServer: {
+        contentBase: './dist'
+    },
     module: {
         rules: [
           {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-dev-server --watch",
+    "server": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --mode development"
   },
   "author": "",
@@ -19,7 +19,6 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
-    "babel-preset-react-hmre": "^1.1.1",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
